@@ -1,0 +1,40 @@
+lda 0
+rdi
+lda 1
+rdi
+lod 1
+ldc 0
+equ
+fjp L0
+lda 3
+ldc 1
+sto
+ujp L1
+lab L0
+lda 3
+lod 0
+sto
+lda 2
+ldc 1
+sto
+lab L2
+lod 2
+lod 1
+let
+fjp L3
+lda 3
+lod 3
+lod 0
+mpi
+sto
+lda 2
+lod 2
+ldc 1
+adi
+sto
+ujp L2
+lab L3
+lab L1
+lod 3
+wri
+stp

@@ -1,0 +1,55 @@
+lda 0
+rdi
+lda 1
+rdi
+lda 2
+rdi
+lod 0
+lod 1
+grt
+fjp L0
+lda 3
+lod 1
+sto
+lda 1
+lod 0
+sto
+lda 0
+lod 3
+sto
+lab L0
+lod 0
+lod 2
+grt
+fjp L1
+lda 3
+lod 2
+sto
+lda 2
+lod 0
+sto
+lda 0
+lod 3
+sto
+lab L1
+lod 1
+lod 2
+grt
+fjp L2
+lda 3
+lod 2
+sto
+lda 2
+lod 1
+sto
+lda 1
+lod 3
+sto
+lab L2
+lod 0
+wri
+lod 1
+wri
+lod 2
+wri
+stp
